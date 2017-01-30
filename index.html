@@ -15,51 +15,80 @@
     <h1>Shaun Dashjian's Blog: <br />Thoughts of a Software Developer</h1>
   </div>
   <div class="container">
-    <a data-target="#post-1" class="btn btn-primary btn-md" data-toggle="collapse">Post 1: switch vs if/else</a>
+    <a data-target="#post-1" class="btn btn-primary btn-md" data-toggle="collapse">Post 1: if/else vs switch</a>
     <div id="post-1" class="collapse in lesson">
-      <h2>switch vs if/else</h2>
+      <h2>if/else vs switch</h2>
       <div class="concept">
         <div class="concept-title">
-
+          Introduction
         </div>
         <div class="concept-description">
-          <p>
+          This blog post is about explaining the difference between the <code>if/else</code> statement and the <code>switch</code> statement with examples in <em>Java</em>. Those are key concepts to understand as you learn your first programming language.
+        </div>
+      </div>
+      <div class="concept">
+        <div class="concept-title">
+          if/else
+        </div>
+        <div class="concept-description">
+          <a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/if.html"><strong>The if/else statement</strong></a> is used to make decisions in the program. Here is an example:
+          <pre>
+      if ( number > 0 ) {
+        System.out.println("This is a positive number");
+      } else if ( number < 0 ){
+        System.out.println("This is a negative number");
+      } else {
+        System.out.println("It's a zero!");
+      }
 
-          </p>
+          </pre>
         </div>
 
       </div>
       <div class="concept">
         <div class="concept-title">
-
+          switch
         </div>
         <div class="concept-description">
-          <p>
-
-          </p>
+          <a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/switch.html"><strong>The switch statement</strong></a>, on the other hand, is used to pick an option out of many. Here is an example:
+          <pre>
+    switch(month) {
+      case 1: monthName = "January";
+              break;
+      case 2: monthName = "February";
+              break;
+      case 3: monthName = "March";
+              break;
+      case 4: monthName = "April";
+              break;
+      case 5: monthName = "May";
+              break;
+      case 6: monthName = "June";
+              break;
+      case 7: monthName = "July";
+              break;
+      case 8: monthName = "August";
+              break;
+      case 9: monthName = "September";
+              break;
+      case 10: monthName = "October";
+              break;
+      case 11: monthName = "November";
+              break;
+      case 12: monthName = "December";
+              break;
+      default: monthName = "error";
+    }
+          </pre>
         </div>
       </div>
+
       <div class="concept">
         <div class="concept-title">
-
+          So which one to use?
         </div>
         <div class="concept-description">
-          <p>
-
-          </p>
-        </div>
-      </div>
-      <div class="concept">
-        <div class="concept-title">
-
-        </div>
-        <div class="concept-description">
-          <p>
-
-          </p>
-          <p>
-
-          </p>
+          Use <code>if/else</code> when you want to make a decision. Use <code>switch</code> to pick an option out of many.
         </div>
       </div>
 
