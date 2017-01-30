@@ -102,46 +102,46 @@
       <h2>= vs ==</h2>
       <div class="concept">
         <div class="concept-title">
-
+          Introduction
         </div>
         <div class="concept-description">
-          <p>
-
-          </p>
+          <code>=</code> and <code>==</code> may seem confusing when you first start learning how to program in <em>Java</em>. This post aims at explaining the difference. Let's dig in!
         </div>
 
       </div>
       <div class="concept">
         <div class="concept-title">
-
+          =
         </div>
         <div class="concept-description">
-          <p>
-
-          </p>
+          <a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/op1.html"><code>=</code></a> is the simple assignment operator. Use it to assign a value to a variable. Here's an example:
+          <pre>
+      int number;
+      number = 5;
+          </pre>
         </div>
       </div>
       <div class="concept">
         <div class="concept-title">
-
+          ==
         </div>
         <div class="concept-description">
-          <p>
-
-          </p>
+          <a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/op2.html"><code>==</code></a> is the equality operator. Use it to test whether two values are equal. Here's an example:
+          <pre>
+    if ( a == b ) {
+      System.out.println( "The two numbers are equal!");
+    } else {
+      System.out.println( "The two numbers are not equal!");
+    }
+          </pre>
         </div>
       </div>
       <div class="concept">
         <div class="concept-title">
-
+          Takeaway
         </div>
         <div class="concept-description">
-          <p>
-
-          </p>
-          <p>
-
-          </p>
+          <code>=</code> is for assigning a value. <code>==</code> is for checking a value.
         </div>
       </div>
 
@@ -155,48 +155,38 @@
       <h2>Math</h2>
       <div class="concept">
         <div class="concept-title">
-
+          Introduction
         </div>
         <div class="concept-description">
-          <p>
-
-          </p>
+          The class <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html"><code>Math</code></a> contains methods for performing basic numeric operations. Here are some examples:
         </div>
 
       </div>
       <div class="concept">
         <div class="concept-title">
-
+          double Math.sqrt(double a)
         </div>
         <div class="concept-description">
-          <p>
-
-          </p>
+          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html#sqrt-double-"><code>Math.sqrt()</code></a> returns the positive square root of a double value. Here's an example:
+          <pre>
+    double number  = 9.0;
+    System.out.println("The square root of " + number + " is " + Math.sqrt(number)); //returns 3.0
+          </pre>
         </div>
       </div>
       <div class="concept">
         <div class="concept-title">
-
+          double Math.abs(double a)
         </div>
         <div class="concept-description">
-          <p>
-
-          </p>
+          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html#abs-double-"><code>Math.abs()</code></a> returns the absolute value of a double value. Here's an example:
+          <pre>
+    double number  = -9.0;
+    System.out.println("The absolute of " + number + " is " + Math.abs(number)); //returns 9.0
+          </pre>
         </div>
       </div>
-      <div class="concept">
-        <div class="concept-title">
 
-        </div>
-        <div class="concept-description">
-          <p>
-
-          </p>
-          <p>
-
-          </p>
-        </div>
-      </div>
 
     </div>
 
@@ -208,46 +198,22 @@
       <h2>Cast a double to an int</h2>
       <div class="concept">
         <div class="concept-title">
-
+          Introduction
         </div>
         <div class="concept-description">
-          <p>
-
-          </p>
+          Sometimes you need to to convert a value from one type to another. This action is called <em>casting.</em>
         </div>
 
       </div>
       <div class="concept">
         <div class="concept-title">
-
+          Casting a <code>double</code> to an <code>int</code>
         </div>
         <div class="concept-description">
-          <p>
-
-          </p>
-        </div>
-      </div>
-      <div class="concept">
-        <div class="concept-title">
-
-        </div>
-        <div class="concept-description">
-          <p>
-
-          </p>
-        </div>
-      </div>
-      <div class="concept">
-        <div class="concept-title">
-
-        </div>
-        <div class="concept-description">
-          <p>
-
-          </p>
-          <p>
-
-          </p>
+          One good use of <a href="http://docs.oracle.com/javase/specs/jls/se7/html/jls-5.html#jls-5.5"><strong>casting</strong></a> is converting a <code>double</code> to an <code>int</code>. Here's an example:
+          <pre>
+    a = 1 + (int)(10*Math.random()); // You want to generate an integer between 1 and 10. Math.random() generates a double. Cast it to an int using (int)
+          </pre>
         </div>
       </div>
 
@@ -261,48 +227,29 @@
       <h2>What is void?</h2>
       <div class="concept">
         <div class="concept-title">
-
+          Introduction
         </div>
         <div class="concept-description">
-          <p>
-
-          </p>
+          In <em>Java</em>, a method is expected to return a value to the code that called it, except when it doesn't.
         </div>
 
       </div>
       <div class="concept">
         <div class="concept-title">
-
+          void means nothing
         </div>
         <div class="concept-description">
-          <p>
-
-          </p>
+          A methoid declared <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/returnvalue.html"><code>void</code></a> doesn't return a value. Here's an example:
+          <pre>
+    public static void printPledge() {
+      System.out.println( "I pledge allegiance to the flag.");
+    }
+          </pre>
+          In the code above, the method was merely printing something on the screen. There was no value to return, hence it was declared <code>void</code>.
         </div>
       </div>
-      <div class="concept">
-        <div class="concept-title">
 
-        </div>
-        <div class="concept-description">
-          <p>
-
-          </p>
-        </div>
-      </div>
-      <div class="concept">
-        <div class="concept-title">
-
-        </div>
-        <div class="concept-description">
-          <p>
-
-          </p>
-          <p>
-
-          </p>
-        </div>
-      </div>
+      
 
     </div>
 
